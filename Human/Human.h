@@ -6,9 +6,11 @@ class Human
 	int age;
 public:
 	Human();
+	Human(int a);
+	Human(const char* sn, int a);
 	Human(const char* n, const char* sn, int a);
 	~Human();
-	void Input();
+	void Input(const char* n, const char* sn, int a);
 	void Print();
 
 	char* GetName();
